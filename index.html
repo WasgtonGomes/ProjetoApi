@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+  <!---->  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Trabalho Wasgton API</title>
+</head>
+<body>
+
+  <h1>Personagens Genshin Impact</h1>
+  <table>
+    <tr>
+      <th>Nome</th>
+      <th>Raridade</th>
+      <th>Elemento</th>
+      <th>Arma</th>
+      <th>Região</th>
+      <th>Descrição</th>
+      <th>URL da Imagem</th>
+      <th>Ataque Base</th>
+      <th>Defesa Base</th>
+      <th>HP Base</th>
+      <th>Ataque Secundário</th>
+      <th>Constelação</th>
+      <th>Habilidade Normal</th>
+      <th>Habilidade Elemental</th>
+      <th>Explosão Elemental</th>
+      <th>Talentos</th>
+      <th>Constelações</th>
+    </tr>
+    <% characters.forEach(character => { %>
+      <tr>
+        <td><%= character.nome %></td>
+        <td><%= character.raridade %></td>
+        <td><%= character.elemento %></td>
+        <td><%= character.arma %></td>
+        <td><%= character.regiao %></td>
+        <td><%= character.descricao %></td>
+        <td><%= character.imagem_url %></td>
+        <td><%= character.ataque_base %></td>
+        <td><%= character.defesa_base %></td>
+        <td><%= character.hp_base %></td>
+        <td><%= character.ataque_secundario %></td>
+        <td><%= character.constelacao %></td>
+        <td><%= character.habilidade_normal %></td>
+        <td><%= character.habilidade_elemental %></td>
+        <td><%= character.explosao_elemental %></td>
+        <td><%= character.talentos %></td>
+        <td><%= character.constelacoes %></td>
+      </tr>
+    <% }); %>
+  </table>
+
+
+  
+   <!-- <img src="genshimGeral.webp" alt="" sizes="200 300" srcset="" >--><!-- 
+        
+   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div id="diluk" class="carousel-item active">
+        <img src="diluk.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="jean.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="keqng.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+     <div id="postagem">
+        
+    </div>--
+    <div id="postagem">
+        
+    </div>
+  -->
+</body>
+<script src="js.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</html>
